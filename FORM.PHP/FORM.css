@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+   
+    zoom: 1.5;
+  }
+  table{border: 2px solid blueviolet;}
+  td{width: 50%; border: 2px solid cadetblue;}
+
+  @keyframes bounce1 {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+  }
+  input{ border-radius: 10px; margin-top: 3px; border:3px solid #000000c1; }
+        input:hover{ border:3px solid #01363a51;box-shadow: 0 0 5px 2prgba(128, 0, 128, 0.719) ; }
+        input:active{border:3px solid #000dff4e;box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.73) ; }
+        p{color: green; text-shadow:  0 0 12px green; position: absolute;    left: 48.5%;}
+        span{color: red; text-shadow:  0 0 12px red; position: absolute;    left: 47%;}
+        @keyframes pulse {0% {transform: scale(1);}100% {transform: scale(1.1);}}
+#submit{animation: pulse 1s alternate-reverse infinite;
+        box-shadow: 1px 1px 10px 5px rgba(26, 7, 73, 0.3);
+        padding: 7px 20px;
+        background: #00458f;
+        color: #fff;
+        border-radius: 5px; 
+        position: relative;
+        top: 87%;
+        left: -1%;
+        animation: bounce1 1s;
+        min-width: 200px;
+        padding: 16px !important;
+}
